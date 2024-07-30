@@ -1,0 +1,592 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clothify : Shopping Site for Apparels</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link
+      rel="stylesheet"
+      data-purpose="Layout StyleSheet"
+      title="Web Awesome"
+      href="/css/app-wa-612dd696ed96d6777d290343ca9cef9d.css?vsn=d"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-thin.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-regular.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-light.css"
+    />
+  </head>
+
+  <body>
+    <section id="header">
+      <a href="index.html" class="logo"><img src="img/favicon.png" /> <b>Clothify</b></a>
+
+      <div>
+        <ul id="navbar">
+          <li id="searchContainer">
+            <form id="searchForm" autocomplete="off">
+              <input type="text" id="searchInput" placeholder="Search for Products, Brands and More" />
+              <button type="submit" id="searchButton">
+                <i class="fa-solid fa-search"></i>
+              </button>
+              <div id="searchResults" class="hidden"></div>
+            </form>
+          </li>
+
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="shop1.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li>
+            <a href="cart.html"><i class="fa-regular fa-cart-shopping"></i></a>
+          </li>
+          <li>
+            <a href="login.html"><i class="fa-solid fa-user"></i></a>
+          </li>
+                  </ul>
+      </div>
+    </section>
+    <section class="carousel1">
+      <div class="container">
+        <div
+          id="myCarousel"
+          class="carousel slide"
+          data-ride="carousel"
+          data-interval="2500"
+        >
+                    <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+
+                    <div class="carousel-inner">
+            <div class="item active">
+              <img
+                src="img/banner/b1.png"
+                alt="Los Angeles"
+                style="width: 100%"
+              />
+            </div>
+
+            <div class="item">
+              <img src="img/banner/b3.png" alt="Chicago" style="width: 100%" />
+            </div>
+
+            <div class="item">
+              <img src="img/banner/b4.png" alt="New york" style="width: 100%" />
+            </div>
+          </div>
+
+                            </div>
+      </div>
+    </section>
+
+    <h3
+      style="
+        text-align: center;
+        font-weight: 500;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      "
+    >
+      TOP CATEGORIES
+    </h3>
+
+    <section id="category">
+      <div id="ctg" class="c1">
+        <a href="shop1.html"
+          ><img src="img/category/shirt.jpeg" alt="shirt" /><br />
+          <h3>Shirts</h3>
+        </a>
+      </div>
+      <div id="ctg" class="c2">
+        <a href="shop1.html#acc"
+          ><img src="img/category/accessories.jpeg" alt="shirt" /><br />
+          <h3>Accessories</h3>
+        </a>
+      </div>
+      <div id="ctg" class="c3">
+        <a href="shop1.html#jacket"
+          ><img src="img/category/jacket.jpeg" alt="shirt" /><br />
+          <h3>Jackets</h3>
+        </a>
+      </div>
+      <div id="ctg" class="c4">
+        <a href="shop1.html#tshirt"
+          ><img src="img/category/tshirt.jpeg" alt="shirt" /><br />
+          <h3>T-Shirts</h3>
+        </a>
+      </div>
+      <div id="ctg" class="c5">
+        <a href="shop1.html#trouser"
+          ><img src="img/category/trouser.jpeg" alt="shirt" /><br />
+          <h3>Trousers</h3>
+        </a>
+      </div>
+      <div id="ctg" class="c6">
+        <a href="shop1.html#jeans"
+          ><img src="img/category/jeans.jpeg" alt="shirt" /><br />
+          <h3>Jeans</h3>
+        </a>
+      </div>
+    </section>
+    <section id="banner" class="m1">
+      <h2>Up to <span>70% Off</span> - All t-shirts & Accessories</h2>
+      <a href="shop1.html"><button>Explore More</button></a>
+    </section>
+    <section id="product1" class="section-p1">
+      <h2>Popular Picks !!</h2>
+      <p>Top Collection New Modern Design</p>
+      <div class="pro-container">
+               <a href="p1.html" class="lnk">
+        <div class="pro">
+          <img src="img/products/shop/p1/1.avif" />
+          <div class="des">
+            <span class="com">Peter England</span>
+            <span class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half"></i>
+            </span>
+            <h5>MEN BLUE SUPER SLIM FIT FORMAL FULL SLEEVES FORMAL SHIRT</h5>
+
+            <h4>₹1,399.00</h4>
+          </div>
+          </a> 
+          <a href="#"><i class="fa-regular fa-cart-shopping cart"></i></a>
+        </div>
+          <a href="p2.html" class="lnk">
+        <div class="pro">
+          <img src="img/products/shop/p2/1.avif" />
+          <div class="des">
+            <span class="com">Peter England</span>
+            <span class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half"></i>
+            </span>
+            <h5>MEN NAVY SLIM FIT FORMAL SHIRT</h5>
+
+            <h4>₹ 2,999.00</h4>
+          </div>
+          <a href="#"><i class="fa-regular fa-cart-shopping cart"></i></a>
+        </div></a>
+        <a href="p3.html" class="lnk">
+        <div class="pro">
+          <img src="img/products/shop/p3/1.avif" />
+          <div class="des">
+            <span class="com">Peter England</span>
+            <span class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half"></i>
+            </span>
+            <h5>MEN PINK SUPER SLIM FIT FORMAL FULL SLEEVES FORMAL SHIRT</h5>
+
+            <h4>₹ 2,299.00</h4>
+          </div>
+          <a href="#"><i class="fa-regular fa-cart-shopping cart"></i></a>
+        </div></a>
+        <a href="p4.html" class="lnk">
+        <div class="pro">
+          <img src="img/products/shop/p4/1.avif"/>
+          <div class="des">
+            <span class="com">Peter England</span>
+            <span class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half"></i>
+            </span>
+            <h5>MEN GREY REGULAR FIT FORMAL FULL SLEEVES FORMAL SHIRT</h5>
+
+            <h4>₹ 1,399.00</h4>
+          </div>
+          <a href="#"><i class="fa-regular fa-cart-shopping cart"></i></a>
+        </div>
+      </a>
+        <div class="pro-container">
+                <a href="p5.html" class="lnk">
+        <div class="pro">
+          <img src="img/products/shop/p5/1.jpg" />
+          <div class="des">
+            <span class="com">Peter England</span>
+            <span class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half"></i>
+            </span>
+            <h5>MEN BLUE PRINT TIE</h5>
+
+            <h4>₹ 699.00</h4>
+          </div>
+          <a href="#"><i class="fa-regular fa-cart-shopping cart"></i></a>
+        </div></a>
+        <a href="p6.html" class="lnk">
+        <div class="pro">
+          <img src="img/products/shop/p6/1.avif" />
+          <div class="des">
+            <span class="com">Peter England</span>
+            <span class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half"></i>
+            </span>
+            <h5>MEN BROWN SOLID GENUINE LEATHER BELT</h5>
+
+            <h4>₹ 999.00</h4>
+          </div>
+          <a href="#"><i class="fa-regular fa-cart-shopping cart"></i></a>
+        </div></a>
+        <a href="p7.html" class="lnk">
+        <div class="pro">
+          <img src="img/products/shop/p7/1.avif" />
+          <div class="des">
+            <span class="com">Peter England</span>
+            <span class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half"></i>
+            </span>
+            <h5>MEN GREY TEXTURED DUFFEL BAG</h5>
+
+            <h4>₹ 1,399.00</h4>
+          </div>
+          <a href="#"><i class="fa-regular fa-cart-shopping cart"></i></a>
+        </div></a>
+        <a href="p8.html" class="lnk">
+        <div class="pro">
+          <img src="img/products/shop/p8/1.avif" />
+          <div class="des">
+            <span class="com">Peter England</span>
+            <span class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half"></i>
+            </span>
+            <h5>MEN BLACK SOLID LEATHER WALLET</h5>
+
+            <h4>
+₹ 999.00</h4>
+          </div>
+          <a href="#"><i class="fa-regular fa-cart-shopping cart"></i></a>
+        </div>
+</a>
+    </section>
+    <section id="sm-banner" class="section-p1">
+      <div class="banner-box"><a href="shop1.html"><img src="img/banner/b5.jpg" alt="" /></a></div>
+      <div class="banner-box banner-box2">
+        <a href="women.html">
+        <img src="img/banner/b7.jpeg" alt="" />
+        </a>
+      </div>
+    </section>
+    <section id="refer">
+      <div class="ref">
+        <a href="login.html"><img src="img/banner/refer.png" alt="refer" /></a>
+      </div>
+    </section>
+    <h3
+      class="stl-heading"
+      style="
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      "
+    >
+      SHOP THE LOOK
+    </h3>
+    <section id="shopthelook">
+      <div class="look" id="lk-1">
+        <a href="#"><button class="lk-b">SHOP THE LOOK</button></a>
+      </div>
+      <div class="look" id="lk-2">
+        <a href="#"><button class="lk-b">SHOP THE LOOK</button></a>
+      </div>
+      <div class="look" id="lk-3">
+        <a href="#"><button class="lk-b">SHOP THE LOOK</button></a>
+      </div>
+      <div class="look" id="lk-4">
+        <a href="#"><button class="lk-b">SHOP THE LOOK</button></a>
+      </div>
+    </section>
+    <section id="featured-collection"></section>
+    <section id="product1" class="section-p1">
+      <div class="pro-container">
+                <a href="p9.html" class="lnk">
+        <div class="pro">
+          <img src="img/products/shop/p9/1.avif" />
+          <div class="des">
+            <span class="com">Peter England</span>
+            <span class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half"></i>
+            </span>
+            <h5>MEN WHITE SOLID CASUAL JACKET</h5>
+
+            <h4>₹ 5,499.00</h4>
+          </div>
+          <a href="#"><i class="fa-regular fa-cart-shopping cart"></i></a>
+        </div></a>
+        <a href="p10.html" class="lnk">
+        <div class="pro">
+          <img src="img/products/shop/p10/1.avif" />
+          <div class="des">
+            <span class="com">Peter England</span>
+            <span class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half"></i>
+            </span>
+            <h5>MEN BLACK PATTERNED CASUAL JACKET</h5>
+
+            <h4>₹ 5,999.00</h4>
+          </div>
+          <a href="#"><i class="fa-regular fa-cart-shopping cart"></i></a>
+        </div></a>
+                <a href="p11.html" class="lnk">
+        <div class="pro">
+          <img src="img/products/shop/p11/1.avif" />
+          <div class="des">
+            <span class="com">Peter England</span>
+            <span class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half"></i>
+            </span>
+            <h5>MEN GREY PRINT CASUAL JACKET</h5>
+
+            <h4>₹ 4,999.00</h4>
+          </div>
+          <a href="#"><i class="fa-regular fa-cart-shopping cart"></i></a>
+        </div></a>
+                <a href="p12.html" class="lnk">
+        <div class="pro">
+          <img src="img/products/shop/p12/1.avif" />
+          <div class="des">
+            <span class="com">Peter England</span>
+            <span class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half"></i>
+            </span>
+            <h5>MEN BLACK SOLID CASUAL JACKET</h5>
+
+            <h4>
+₹ 5,999.00</h4>
+          </div>
+          <a href="#"><i class="fa-regular fa-cart-shopping cart"></i></a>
+        </div></a>
+        <div class="pro-container">
+                <a href="p13.html" class="lnk">
+        <div class="pro">
+          <img src="img/products/shop/p13/1.avif" />
+          <div class="des">
+            <span class="com">Peter England</span>
+            <span class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half"></i>
+            </span>
+            <h5>MEN RED SOLID CREW NECK ROUND NECK T-SHIRTS</h5>
+
+            <h4>₹ 1,799.00</h4>
+          </div>
+          <a href="#"><i class="fa-regular fa-cart-shopping cart"></i></a>
+        </div></a>
+                <a href="p14.html" class="lnk">
+        <div class="pro">
+          <img src="img/products/shop/p14/1.avif" />
+          <div class="des">
+            <span class="com">Peter England</span>
+            <span class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half"></i>
+            </span>
+            <h5>MEN BLACK SOLID CREW NECK ROUND NECK T-SHIRTS</h5>
+
+            <h4>₹ 1,199.00</h4>
+          </div>
+          <a href="#"><i class="fa-regular fa-cart-shopping cart"></i></a>
+        </div></a>
+                <a href="p15.html" class="lnk">
+        <div class="pro">
+          <img src="img/products/shop/p15/1.avif" />
+          <div class="des">
+            <span class="com">Peter England</span>
+            <span class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half"></i>
+            </span>
+            <h5>MEN RED SOLID POLO NECK POLO T-SHIRTS</h5>
+
+            <h4>₹ 1,999.00</h4>
+          </div>
+          <a href="#"><i class="fa-regular fa-cart-shopping cart"></i></a>
+        </div></a>
+                <a href="p16.html" class="lnk">
+        <div class="pro">
+          <img src="img/products/shop/p16/1.avif" />
+          <div class="des">
+            <span class="com">Peter England</span>
+            <span class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half"></i>
+            </span>
+            <h5>MEN YELLOW SOLID CREW NECK ROUND NECK T-SHIRTS</h5>
+
+            <h4>
+₹ 1,199.00</h4>
+          </div></a>
+          <a href="#"><i class="fa-regular fa-cart-shopping cart"></i></a>
+        </div>
+      <section id="service">
+        <div class="services">SERVICES</div>
+        <div class="s-img"><img src="img/banner/services.png" alt="" /></div>
+      </section>
+    </section>
+    <section id="newsletter" class="section-p1" class="section-m1">
+      <div class="newstext">
+        <h4>Give us feedback</h4>
+        <p>
+          We'll get E-mail updates about your
+          <span style="color: yellow">feedback /</span>
+          <span style="color: yellow">issues</span>.
+        </p>
+      </div>
+      <div class="form">
+        <form action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="efbe99d3-fccd-4e49-9147-db176acd1d26">
+    <input type="text" name="name" required placeholder="Name">
+    <input type="email" name="email" required placeholder="Email">
+    <input type="text" name="message" required placeholder="Feedback here"></input>
+    <button type="submit">Submit Form</button>
+    </form>
+      </div>
+    </section>
+    <footer class="footer1">
+      <div class="footerLeft">
+        <div class="footerMenu">
+          <h1 class="fMenuTitle">About Us</h1>
+          <ul class="fList">
+            <li class="fListItem" onclick="window.location.href='about.html'">Company</li>
+            <li class="fListItem" onclick="window.location.href='contact.html'" >Contact</li>
+            <li class="fListItem" onclick="window.location.href='contact.html'">Stores</li>
+          </ul>
+        </div>
+        <div class="footerMenu">
+          <h1 class="fMenuTitle">My Account</h1>
+          <ul class="fList">
+            <li class="fListItem" onclick="window.location.href='login.html'">Sign In</li>
+            <li class="fListItem"onclick="window.location.href='cart.html'">View Cart</li>
+            <li class="fListItem" onclick="window.location.href='contact.html'">Help</li>
+          </ul>
+        </div>
+        <div class="footerMenu">
+          <h1 class="fMenuTitle">Useful Links</h1>
+          <ul class="fList">
+            <li class="fListItem" onclick="window.location.href='contact.html'">Support</li>
+            <li class="fListItem" onclick="window.location.href='contact.html'">Refund</li>
+            <li class="fListItem" onclick="window.location.href='contact.html'">FAQ</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footerRight">
+        <div class="footerRightMenu">
+          <h1 class="fMenuTitle">Follow Us</h1>
+          <div class="ficons">
+                        <i class="fa-brands fa-facebook-f ficon"></i>
+            <i class="fa-brands fa-instagram ficon"></i>
+            <i class="fa-brands fa-x-twitter ficon"></i>
+            <i class="fa-brands fa-youtube ficon"></i>
+            <i class="fa-brands fa-whatsapp ficon"></i>
+          </div>
+        </div>
+        <div class="footerRightMenu">
+          <h1 class="fMenuTitle">Contact Us</h1>
+          <div class="ficons">
+                                    <i class="fa-duotone fa-phone ficon"></i>
+            <i class="fa-sharp fa-solid fa-envelope ficon"></i>
+            <i class="fa-sharp fa-solid fa-location-dot ficon"></i>
+          </div>
+        </div>
+        <div class="footerRightMenu">
+          <span class="copyright">
+            <span>©</span>
+            <span>Clothify Marketing Pvt. Ltd</span>
+                                  </span>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js">
+      </script>
+      <script src="cart.js">
+      </script>
+     
+     <script src="search.js">
+      </script>
+    
+  </body>
+</html>

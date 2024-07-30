@@ -1,0 +1,182 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clothify : Login</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      data-purpose="Layout StyleSheet"
+      title="Web Awesome"
+      href="/css/app-wa-612dd696ed96d6777d290343ca9cef9d.css?vsn=d"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-thin.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-regular.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-light.css"
+    />
+    <style>
+      body {
+        background-image: url(img/loginbg5.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section id="header">
+      <a href="index.html" class="logo"
+        ><img src="img/favicon.png" /> <b>Clothify</b></a
+      >
+
+      <div>
+        <ul id="navbar">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="shop1.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li>
+            <a href="cart.html"><i class="fa-regular fa-cart-shopping"></i></a>
+          </li>
+          <li>
+            <a href="login.html"><i class="fa-solid fa-user"></i></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="login-details" class="section-p1">
+      <form name="fname1" onsubmit="return all_field1()" style="display: block">
+        <h2>Login</h2>
+        <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+        <!-- <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Name" required /> -->
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Email" />
+        <label for="number">Phone Number</label>
+        <input
+          type="text"
+          id="number"
+          name="number"
+          placeholder="Phone Number"
+        />
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Password"
+        />
+        <!-- <label for="cpassword">Confirm Password</label>
+      <input
+        type="password"
+        id="cpassword"
+        placeholder="Confirm Password"
+        required /> -->
+
+        <!-- <p>
+        By creating an account you agree to our
+        <a href="#">Terms & Conditions</a>
+      </p> -->
+
+        <button type="submit" value="submit" class="normal">Log In</button>
+      </form>
+      <!-- <button id="logoutButton" class="hidden normal" onclick="logout()">
+      Log Out
+    </button> -->
+      <button
+        id="logoutButton"
+        class="normal"
+        style="
+          display: none;
+          background-color: #874260;
+          color: #fff;
+          margin-left: 200px;
+        "
+        onclick="logout()"
+      >
+        Log Out
+      </button>
+    </section>
+
+    <script>
+      var loggedIn = localStorage.getItem("loggedIn");
+
+      if (loggedIn) {
+        // User is logged in, show logout button and hide login form
+        document.getElementById("logoutButton").style.display = "block";
+        document.forms["fname1"].style.display = "none";
+      }
+      function all_field1() {
+        let e = document.forms["fname1"]["email"].value;
+        let no = document.forms["fname1"]["number"].value;
+        let p = document.forms["fname1"]["password"].value;
+
+        if (e === "" || no === "" || p === "") {
+          alert("All fields must be filled out");
+          return false;
+        }
+
+        var accounts = JSON.parse(localStorage.getItem("accounts")) || [];
+
+        var account = accounts.find(function (account) {
+          return account.email === e;
+        });
+
+        if (account) {
+          if (account.number === no && account.password === p) {
+            console.log("Redirecting to index.html...");
+            localStorage.setItem("loggedIn", true);
+            window.location.href = "index.html";
+            alert("Login Successful!");
+            return true;
+          } else {
+            alert("Incorrect phone number or password.");
+            return false;
+          }
+        } else {
+          alert("Email not found. Please sign up.");
+          window.location.href = "signup.html";
+          return false;
+        }
+      }
+      function logout() {
+        // Clear the user's session information
+        localStorage.removeItem("loggedIn");
+        // Hide the logout button
+        document.getElementById("logoutButton").style.display = "none";
+        // Show the login form
+        document.forms["fname1"].style.display = "block";
+      }
+
+      // Check if the user is logged in and adjust UI accordingly
+    </script>
+  </body>
+</html>
